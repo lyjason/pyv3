@@ -5,13 +5,13 @@
 #定义函数用来提示如何输入数据
 def example (x):	
 	if x == 2:
-		print('2-system,for exmaple:101000100')
+		print('(2-system,for exmaple:10100010)')
 	elif x == 8:
-		print('8-system,for exmaple:1234567')
+		print('(8-system,for exmaple:1234567)')
 	elif x == 10:
-		print('10-system,for exmaple:1234567890')
+		print('(10-system,for exmaple:1234567890)')
 	elif x == 16:
-		print('16-system,for exmaple:abcd12133')
+		print('(16-system,for exmaple:abcd12133)')
 #定义函数，任何进制转为10进制，10进制转为任何进制
 def system (x,y,z):			
 	a=int(y,x)	
