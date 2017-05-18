@@ -1,0 +1,24 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
+import random
+print("this is a python program")
+print("now i have a numbers")
+print("this is an integer from 0 to 100")
+num=random.randint(0,100)
+guess=int(input("guess it:"))
+t=3
+while t>0:
+    if guess==num:
+        print("you are right")
+        break
+    if guess > num:
+        print("your num is bigger")
+        guess=int(input("re-input your num:")
+        t=t-1
+        continue
+    if guess < num:
+        print("your num is smaller")
+        guess=int(input("re-input your num:")
+        t=t-1
+        continue
+    print("you fail")
