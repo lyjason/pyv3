@@ -1,11 +1,18 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
 import random
+
 print("this is a python program")
 print("now i have a numbers")
 print("this is an integer from 0 to 100")
-num=random.randint(0,100)
+num=random.randint(0,10)
 guess=int(input("guess it:"))
+if guess==num:
+	print('you are right:',num)
+	else:
+	print('try again!')
+	
+'''
 t=3
 while t>0:
     if guess==num:
@@ -22,3 +29,4 @@ while t>0:
         t=t-1
         continue
     print("you fail")
+'''
