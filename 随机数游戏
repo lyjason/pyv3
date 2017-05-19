@@ -1,32 +1,27 @@
 #!/usr/bin/python
 #-*- coding:utf-8 -*-
-import random
+import random   #加载随机模块
 
-print("this is a python program")
-print("now i have a numbers")
-print("this is an integer from 0 to 100")
+print("this is a python program\n")
+print("now i have a numbers\n")
+print("this is an integer from 0 to 10\n")
+
 num=random.randint(0,10)
-guess=int(input("guess it:"))
-if guess==num:
-	print('you are right:',num)
-	else:
-	print('try again!')
-	
-'''
+guess=input("Guess it:")
+guess=int(guess)
 t=3
-while t>0:
-    if guess==num:
-        print("you are right")
+while  t!=1:
+    t-=1
+    if guess==num :
+        print("\nYes!You are right:",num,'\n')
         break
-    if guess > num:
-        print("your num is bigger")
-        guess=int(input("re-input your num:")
-        t=t-1
+    elif guess>num:
+        print("\n====>Bigger<====\n")
+        guess=int(input("Please try again:"))        
         continue
-    if guess < num:
-        print("your num is smaller")
-        guess=int(input("re-input your num:")
-        t=t-1
+    elif guess<num:
+        print("\n====>Smaller<====\n")
+        guess=int(input("Please try again:"))
         continue
-    print("you fail")
-'''
+else:
+    print("\nSorry! your time has been run out of\n")
