@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #-*- coding:utf-8 -*-
 #加载随机模块
 import random 
